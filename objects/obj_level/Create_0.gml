@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Grid Creation
+
 globalvar grid;
 tsize = 32;
 grid = mp_grid_create(0, 0, room_width / tsize, room_height /tsize, tsize, tsize);
@@ -16,4 +16,5 @@ for (var i = 0; i < room_width/32; i++) {
 		}
 	}
 }
+
 

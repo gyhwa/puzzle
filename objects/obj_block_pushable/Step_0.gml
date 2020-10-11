@@ -2,8 +2,8 @@
 // You can write your code in this editor
 
 
-//reset			
-if(keyboard_check_pressed(global.reset)) {
+//redo			
+if(keyboard_check_pressed(global.redo)) {
 	if (global.turn > 0) {
 		mp_grid_clear_cell(grid, x/32, y/32);
 		x = x_saved[global.turn - 1]
@@ -45,12 +45,16 @@ if (!locked) {
 				y += vsp;
 				mp_grid_add_cell(grid, x/32, y/32);
 				moved = true;
+				global.turn += 1;
+				global.actual_turn += 1;
 			} else if (valid_tilemap_move(tiles,x+hsp,y+vsp) && !place_meeting(x+hsp, y+vsp,obj_impassable) && !moved) {
 				mp_grid_clear_cell(grid, x/32, y/32);
 				x += hsp;
 				y += vsp;
 				mp_grid_add_cell(grid, x/32, y/32);
 				moved = true;
+				global.turn += 1;
+				global.actual_turn += 1;
 			}
 			state = "idle";
 			

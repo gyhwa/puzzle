@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Controls
+
 
 
 //controls
@@ -9,15 +9,17 @@ global.left = vk_left
 global.right = vk_right
 
 global.push = vk_shift
+global.reset = ord("R")
+global.redo = ord("F")
+
 global.dash = vk_space
-global.back = ord("E")
-global.reset = ord("F")
 
+global.menu = vk_escape
 
-// timers
-global.spawn_timer = 5 * room_speed
+// controls enabled
 
-
-//game
+//room controller
+global.rm = 0;
 score = 0;
-global.animation_steps = 3;
+
+//save

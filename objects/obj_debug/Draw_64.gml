@@ -11,4 +11,5 @@
 
 draw_text(10,10,"turn:" + string(global.turn))
 //draw_text(10,25,"prev turn:" + string(obj_enemy_common.prev_turn))
+draw_text(10,25,"room:" + string(global.rm))
 

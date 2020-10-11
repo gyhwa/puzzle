@@ -3,8 +3,8 @@
 
 //avoid blocks
 //get to player
-//reset			
-if(keyboard_check_pressed(global.reset)) {
+//redo			
+if(keyboard_check_pressed(global.redo)) {
 	if (global.turn > 0) {
 		x = x_saved[global.turn - 1]
 		y = y_saved[global.turn - 1]
