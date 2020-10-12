@@ -3,5 +3,3 @@
 
 
 //collsion check
-
-show_debug_message("ouch")

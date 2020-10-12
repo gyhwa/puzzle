@@ -1,14 +1,17 @@
 /// @description level spawner
 switch(room) {
 	case rm_level_00:
-		//global.max_turns = 25;
-		// 2 over solution
+		message = @"Press arrow keys to move.
+Shift to push a box.
+F to travel back in time.
+R to refresh the entire level."
 	break;
 	case rm_level_01:
-		//global.max_turns = 90;
+		message = @"The red ghost will leave a skull.
+Touching the skull resets the entire level."
 	break;
 		case rm_level_02:
-		//global.max_turns = 55;
+		message = ""
 	break;
 	case rm_level_exp:
 		instance_create_layer(tsize+16, tsize+16,"Instances", obj_player);
