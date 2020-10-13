@@ -7,18 +7,12 @@ if (keyboard_check_pressed(global.menu)) {
 	room_goto(rm_menu);
 }
 
-if (keyboard_check(global.dash)) {
-	dash = true;
-}
 
 if (keyboard_check_pressed(global.push)) {
 	state = "push"
 }
 
-//TODO: change this rm to the correct one when player can dash
-if (global.rm > 10) {
-	can_dash = true;
-}
+
 
 //unlock
 if (!instance_place(x,y,obj_lock_player)) {
@@ -26,11 +20,7 @@ if (!instance_place(x,y,obj_lock_player)) {
 }
 
 //moving
-if (dash && can_dash) {
-	sp = 2;
-} else {
-	sp = 1;
-}
+
 hsp *= tsize*sp;
 vsp *= tsize*sp;
 
@@ -61,7 +51,6 @@ if (!locked) {
 	switch(state) {
 		case "idle": 
 			//redo all variables
-			 dash = false;
 		break;
 		case "move":
 			if (valid_tilemap_move(tiles,x+hsp,y+vsp) && !place_meeting(x+hsp, y+vsp,obj_impassable)) {	

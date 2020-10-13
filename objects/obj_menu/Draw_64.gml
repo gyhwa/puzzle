@@ -9,7 +9,7 @@ var left_click = mouse_check_button_pressed(mb_left);
 //New Game
 if (point_in_rectangle(mousex,mousey, 30, 300, 90+string_width("New Game"), 300+string_height("New Game"))){
 	draw_set_color(c_orange); //highlight the word
-	if (left_click) room_goto_next();
+	if (left_click) room_goto(rm_level_00);
 } else {
 	draw_set_color(c_white);
 }

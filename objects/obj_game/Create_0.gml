@@ -10,9 +10,8 @@ global.right = vk_right
 
 global.push = vk_shift
 global.reset = ord("R")
-global.redo = ord("F")
+global.redo = vk_space
 
-global.dash = vk_space
 
 global.menu = vk_escape
 

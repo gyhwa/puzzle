@@ -4,13 +4,19 @@ switch(room) {
 		message = @"Press arrow keys to move.
 Shift to push a box.
 F to travel back in time.
-R to refresh the entire level."
+R to refresh the entire level.
+
+WATCH OUT THE BLUE GHOST WILL DESTROY 
+THE BOX AND THEN YOU WILL HAVE NO BOX"
 	break;
 	case rm_level_01:
 		message = @"The red ghost will leave a skull.
 Touching the skull resets the entire level."
 	break;
-		case rm_level_02:
+	case rm_level_02:
+		message = ""
+	break;
+	case rm_level_03:
 		message = ""
 	break;
 	case rm_level_exp:

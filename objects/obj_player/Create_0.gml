@@ -9,9 +9,6 @@ sp = 1;
 tsize = 32;
 
 
-//dash
-dash = false;
-can_dash = false;
 
 //states
 dir = 0;
