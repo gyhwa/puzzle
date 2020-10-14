@@ -1,5 +1,5 @@
 {
-  "bboxMode": 2,
+  "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
   "origin": 0,
@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 31,
+  "bbox_right": 287,
   "bbox_top": 0,
-  "bbox_bottom": 31,
+  "bbox_bottom": 95,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 32,
-  "height": 32,
+  "width": 288,
+  "height": 96,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"991ca323-daed-43c9-840d-986c7fa9d579","path":"sprites/spr_goal/spr_goal.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"991ca323-daed-43c9-840d-986c7fa9d579","path":"sprites/spr_goal/spr_goal.yy",},"LayerId":{"name":"7ff021b5-81f6-4cdc-865b-feaf6b91874a","path":"sprites/spr_goal/spr_goal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_goal","path":"sprites/spr_goal/spr_goal.yy",},"resourceVersion":"1.0","name":"991ca323-daed-43c9-840d-986c7fa9d579","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"829b9ce2-fa81-4601-9859-80de17135888","path":"sprites/spr_speech/spr_speech.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"829b9ce2-fa81-4601-9859-80de17135888","path":"sprites/spr_speech/spr_speech.yy",},"LayerId":{"name":"25129c25-05a7-4a3c-99ed-57060a81a63d","path":"sprites/spr_speech/spr_speech.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_speech","path":"sprites/spr_speech/spr_speech.yy",},"resourceVersion":"1.0","name":"829b9ce2-fa81-4601-9859-80de17135888","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_goal","path":"sprites/spr_goal/spr_goal.yy",},
+    "spriteId": {"name":"spr_speech","path":"sprites/spr_speech/spr_speech.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"fe1dffd7-97a1-40db-b3af-801cbbacb684","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"991ca323-daed-43c9-840d-986c7fa9d579","path":"sprites/spr_goal/spr_goal.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"57f0c34f-9040-4988-a7fb-6dcc4bae9caa","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"829b9ce2-fa81-4601-9859-80de17135888","path":"sprites/spr_speech/spr_speech.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_goal","path":"sprites/spr_goal/spr_goal.yy",},
+    "parent": {"name":"spr_speech","path":"sprites/spr_speech/spr_speech.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_goal",
+    "name": "spr_speech",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7ff021b5-81f6-4cdc-865b-feaf6b91874a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"25129c25-05a7-4a3c-99ed-57060a81a63d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "game",
     "path": "folders/Sprites/game.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_goal",
+  "name": "spr_speech",
   "tags": [],
   "resourceType": "GMSprite",
 }

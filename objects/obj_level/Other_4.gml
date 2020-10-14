@@ -3,21 +3,33 @@ switch(room) {
 	case rm_level_00:
 		message = @"Press arrow keys to move.
 Shift to push a box.
-F to travel back in time.
-R to refresh the entire level.
+R to refresh the entire level."
+		hint = @"HINT: Push the boxes over the ghost.
+The blue ghosts will cause the ghost 
+to disappear.
 
-WATCH OUT THE BLUE GHOST WILL DESTROY 
-THE BOX AND THEN YOU WILL HAVE NO BOX"
+When all ghosts are gone, exit through 
+the tombstone."
 	break;
 	case rm_level_01:
-		message = @"The red ghost will leave a skull.
-Touching the skull resets the entire level."
+		message = "Press SPACE to travel back in time."
+		hint = @"The red ghost will leave behind 
+it's skeleton. But it won't destroy the box
+unlike the blue ghost. Thank you red ghost.
+
+Don't touch the skeleton. "
 	break;
 	case rm_level_02:
 		message = ""
+		hint = @"While the ghosts are a ghost, you can walk
+through them. They're ghosts after all.
+
+Now you go free those ghosts. No more help 
+from me now."
 	break;
 	case rm_level_03:
 		message = ""
+		hint = ""
 	break;
 	case rm_level_exp:
 		instance_create_layer(tsize+16, tsize+16,"Instances", obj_player);

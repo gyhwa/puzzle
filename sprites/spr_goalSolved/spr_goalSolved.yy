@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"991ca323-daed-43c9-840d-986c7fa9d579","path":"sprites/spr_goal/spr_goal.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"991ca323-daed-43c9-840d-986c7fa9d579","path":"sprites/spr_goal/spr_goal.yy",},"LayerId":{"name":"7ff021b5-81f6-4cdc-865b-feaf6b91874a","path":"sprites/spr_goal/spr_goal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_goal","path":"sprites/spr_goal/spr_goal.yy",},"resourceVersion":"1.0","name":"991ca323-daed-43c9-840d-986c7fa9d579","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"12961f24-6a28-4857-b9ab-9c722d7c5f96","path":"sprites/spr_goalSolved/spr_goalSolved.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"12961f24-6a28-4857-b9ab-9c722d7c5f96","path":"sprites/spr_goalSolved/spr_goalSolved.yy",},"LayerId":{"name":"70b9264a-f3ac-461c-b91b-52f64455fdad","path":"sprites/spr_goalSolved/spr_goalSolved.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_goalSolved","path":"sprites/spr_goalSolved/spr_goalSolved.yy",},"resourceVersion":"1.0","name":"12961f24-6a28-4857-b9ab-9c722d7c5f96","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_goal","path":"sprites/spr_goal/spr_goal.yy",},
+    "spriteId": {"name":"spr_goalSolved","path":"sprites/spr_goalSolved/spr_goalSolved.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"fe1dffd7-97a1-40db-b3af-801cbbacb684","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"991ca323-daed-43c9-840d-986c7fa9d579","path":"sprites/spr_goal/spr_goal.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cfa34ccb-3d7e-4704-89dc-d1bb307a6c88","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"12961f24-6a28-4857-b9ab-9c722d7c5f96","path":"sprites/spr_goalSolved/spr_goalSolved.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_goal","path":"sprites/spr_goal/spr_goal.yy",},
+    "parent": {"name":"spr_goalSolved","path":"sprites/spr_goalSolved/spr_goalSolved.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_goal",
+    "name": "spr_goalSolved",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7ff021b5-81f6-4cdc-865b-feaf6b91874a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"70b9264a-f3ac-461c-b91b-52f64455fdad","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "game",
     "path": "folders/Sprites/game.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_goal",
+  "name": "spr_goalSolved",
   "tags": [],
   "resourceType": "GMSprite",
 }

@@ -22,8 +22,10 @@ if (!instance_exists(obj_enemy)) {
 			room_goto(rm_level_04) 
 			break;
 		case 5: 
-			room_goto(rm_level_05) 
-
+//			room_goto(rm_level_05) 
+			break;
+		case 6: 
+//			room_goto(rm_level_06) 
 			break;
 		default: room_goto(rm_level_exp) break;
 	}
