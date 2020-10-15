@@ -22,3 +22,4 @@ tiles = layer_tilemap_get_id(layerID);
 //counts
 global.turn = 0;
 global.actual_turn = 0;
+animation = 120;

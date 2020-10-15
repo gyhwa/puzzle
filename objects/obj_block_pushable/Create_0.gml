@@ -23,3 +23,4 @@ mp_grid_add_cell(grid, x/32, y/32);
 
 //boolean
 locked = false;
+moved = false;

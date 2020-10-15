@@ -1,6 +1,8 @@
-//inputs
-hsp = keyboard_check_pressed(global.right) - keyboard_check_pressed(global.left);
-vsp = keyboard_check_pressed(global.down) - keyboard_check_pressed(global.up);
+
+//unlock
+if (!instance_place(x,y,obj_enemy_shooter0) && !instance_place(x,y,obj_skull)) {
+	locked = false;
+}
 
 
 if (keyboard_check_pressed(global.menu)) {
@@ -8,46 +10,46 @@ if (keyboard_check_pressed(global.menu)) {
 }
 
 
-if (keyboard_check_pressed(global.push)) {
-	state = "push"
-}
+	//inputs
+	hsp = keyboard_check_pressed(global.right) - keyboard_check_pressed(global.left);
+	vsp = keyboard_check_pressed(global.down) - keyboard_check_pressed(global.up);
 
 
-
-//unlock
-if (!instance_place(x,y,obj_lock_player)) {
-	locked = false;
-}
-
-//moving
-
-hsp *= tsize*sp;
-vsp *= tsize*sp;
-
-
-//redo
-if(keyboard_check_pressed(global.redo) && !locked) {
-	if (global.turn > 0) {
-		global.turn -= 1
-		x = x_saved[global.turn]
-		y = y_saved[global.turn]
-		dir = dir_saved[global.turn]
-		global.actual_turn += 1;
+	if (keyboard_check_pressed(global.push)) {
+		state = "push"
 	}
-}
-
-if (vsp != 0 || hsp != 0) {
-	state = "move"
-	_dir = point_direction(0, 0, hsp, vsp); 
-	dir = floor(_dir/90);
-}
 
 
-x_saved[global.turn] = x;
-y_saved[global.turn] = y;
-dir_saved[global.turn] = dir;
+	//moving
+	hsp *= tsize*sp;
+	vsp *= tsize*sp;
+
+
+	//redo
+	if(keyboard_check_pressed(global.redo) && !locked) {
+		if (global.turn > 0) {
+			global.turn -= 1
+			x = x_saved[global.turn]
+			y = y_saved[global.turn]
+			dir = dir_saved[global.turn]
+			global.actual_turn += 1;
+		}
+	}
 
 if (!locked) {
+	if (vsp != 0 || hsp != 0) {
+		state = "move"
+		_dir = point_direction(0, 0, hsp, vsp); 
+		dir = floor(_dir/90);
+	}
+
+
+
+	x_saved[global.turn] = x;
+	y_saved[global.turn] = y;
+	dir_saved[global.turn] = dir;
+
+
 	switch(state) {
 		case "idle": 
 			//redo all variables
@@ -92,6 +94,7 @@ if (!locked) {
 			var inst = instance_place(xx,yy,obj_block_pushable)
 			if (inst) {
 				inst.dir = dir
+				inst.locked = false;
 				inst.state = "move"
 			}
 			if (alarm[0] <= 0) {

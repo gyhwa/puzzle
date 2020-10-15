@@ -5,8 +5,8 @@ switch(room) {
 Shift to push a box.
 R to refresh the entire level."
 		hint = @"HINT: Push the boxes over the ghost.
-The blue ghosts will cause the ghost 
-to disappear.
+The blue ghosts will cause the box 
+to disappear on contact.
 
 When all ghosts are gone, exit through 
 the tombstone."
@@ -28,6 +28,17 @@ Now you go free those ghosts. No more help
 from me now."
 	break;
 	case rm_level_03:
+		message = ""
+		hint = ""
+	break;
+	case rm_level_04:
+		message = ""
+		hint = ""
+	break;
+	case rm_level_05:
+		var inst = instance_create_layer(400, 208,"Instances", obj_enemy_babyshooter);
+		inst.direction = 180;
+		inst.image_xscale = -1;
 		message = ""
 		hint = ""
 	break;

@@ -15,6 +15,31 @@ if(keyboard_check_pressed(global.redo)) {
 x_saved[global.turn] = x;
 y_saved[global.turn] = y;
 
+if (locked) {
+	// need to move 16 morew
+	if (_dir = 0) {
+		x += 1
+		if (x mod 32 == 0) {
+			locked = false
+		}
+	} else if (_dir = 2) {
+		x -= 1
+		if (x mod 32 == 0) {
+			locked = false
+		}
+	} else if (_dir = 1) {
+		y -= 1
+		if (y mod 32 == 0) {
+			locked = false
+		}
+	} else {
+		y += 1
+		if (y mod 32 == 0) {
+			locked = false
+		}
+	}
+}
+
 if (!locked) {
 	switch(state) {
 		case "idle":

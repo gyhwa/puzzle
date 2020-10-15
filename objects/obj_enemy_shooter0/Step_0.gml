@@ -24,15 +24,12 @@ if (dir == 0) {
 }
 
 //check if box is in front
-if (instance_place(x1, y1, obj_block_pushable)) {
-	sprite_index = spr_enemy_shooter1
-	//do nothing else
-} else if (creator == "obj_enemy_shooter") {
+if (creator == "obj_enemy_babyshooter" || creator == "obj_enemy_sturdybabyshooter" ) {
 	//check that it's not created already
 	if (!instance_place(x1, y1, obj_enemy_shooter0) && !last) {
 		var inst = instance_create_layer(x1, y1, "Instances",obj_enemy_shooter0)
 		inst.direction = direction
-		inst.image_angle = image_angle;
+		inst.image_xscale = image_xscale;
 		inst.creator = object_get_name(object_index);
 		inst.creator_id = id;
 		inst.last = false;
@@ -42,7 +39,7 @@ if (instance_place(x1, y1, obj_block_pushable)) {
 	if (!instance_place(x1, y1, obj_enemy_shooter0) && !last) {
 		var inst = instance_create_layer(x1, y1, "Instances",obj_enemy_shooter0)
 		inst.direction = direction
-		inst.image_angle = image_angle;
+		inst.image_xscale = image_xscale;
 		inst.creator = object_get_name(object_index);
 		inst.creator_id = id;
 		inst.sprite_index = spr_enemy_shooter1
@@ -52,7 +49,7 @@ if (instance_place(x1, y1, obj_block_pushable)) {
 
 
 //fix sprite_index
-if (!last && !instance_place(x1, y1, obj_block_pushable)) {
+if (!last) {
 	sprite_index = spr_enemy_shooter0
 }
 
