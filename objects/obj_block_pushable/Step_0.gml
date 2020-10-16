@@ -1,6 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//fix positioning if not centered
+if (y mod 32 != 0) {
+	if (y mod 32 < 16) {
+		y -= 1
+	} else {
+		y += 1
+	} 
+}
+if (x mod 32 != 0) {
+	if (x mod 32 < 16) {
+		x -= 1
+	} else {
+		x += 1
+	} 
+}
 
 //redo			
 if(keyboard_check_pressed(global.redo)) {

@@ -9,7 +9,11 @@
 //draw_text(10,20, "cooldown: " + string(obj_player.dash_cooldown))
 //draw_text(10,30, "lives: " + string(lives))
 
-draw_text(10,10,"turn:" + string(global.turn))
+//draw_text(10,10,"turn:" + string(global.turn))
 //draw_text(10,25,"prev turn:" + string(obj_enemy_common.prev_turn))
-draw_text(10,25,"room:" + string(global.rm))
+//draw_text(10,25,"room:" + string(global.rm))
 
+//draw_text(10,10,"x:" + string(obj_player.x))
+//draw_text(10,25, "y:" + string(obj_player.y))
+draw_text(10,25, "turn:" + string(global.turn))
+draw_text(10,10,"turn:" + string(array_length_1d(obj_player.x_saved)))

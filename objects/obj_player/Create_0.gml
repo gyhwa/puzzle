@@ -7,7 +7,7 @@ vsp = 0;
 sp = 1;
 //properties
 tsize = 32;
-
+x_saved[0] = x;
 
 
 //states

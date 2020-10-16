@@ -24,12 +24,13 @@ if (dir == 0) {
 }
 
 //check if box is in front
-if (creator == "obj_enemy_babyshooter" || creator == "obj_enemy_sturdybabyshooter" ) {
+if (creator == "obj_enemy_shooter" ) {
 	//check that it's not created already
 	if (!instance_place(x1, y1, obj_enemy_shooter0) && !last) {
 		var inst = instance_create_layer(x1, y1, "Instances",obj_enemy_shooter0)
 		inst.direction = direction
 		inst.image_xscale = image_xscale;
+		inst.image_angle = image_angle;
 		inst.creator = object_get_name(object_index);
 		inst.creator_id = id;
 		inst.last = false;
@@ -40,6 +41,7 @@ if (creator == "obj_enemy_babyshooter" || creator == "obj_enemy_sturdybabyshoote
 		var inst = instance_create_layer(x1, y1, "Instances",obj_enemy_shooter0)
 		inst.direction = direction
 		inst.image_xscale = image_xscale;
+		inst.image_angle = image_angle;
 		inst.creator = object_get_name(object_index);
 		inst.creator_id = id;
 		inst.sprite_index = spr_enemy_shooter1

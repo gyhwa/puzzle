@@ -36,9 +36,16 @@ from me now."
 		hint = ""
 	break;
 	case rm_level_05:
-		var inst = instance_create_layer(400, 208,"Instances", obj_enemy_babyshooter);
+		var inst = instance_create_layer(400, 208,"Instances", obj_enemy_shooter);
 		inst.direction = 180;
 		inst.image_xscale = -1;
+		message = ""
+		hint = ""
+	break;
+	case rm_level_06:
+		var inst = instance_create_layer(tsize*6+16, tsize*11+16,"Instances", obj_enemy_shooter);
+		inst.direction = 90;
+		inst.image_angle = 90;
 		message = ""
 		hint = ""
 	break;

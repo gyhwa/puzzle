@@ -12,3 +12,20 @@ if (_dir = 0) {
 } else {
 	y += 1
 }
+
+if (other.sprite_index == spr_enemy_shooter1) {
+	if ((y+16) mod 32 != 0) {
+		if ((y+16) < 16) {
+			y += 1
+		} else {
+			y -= 1
+		} 
+	}
+	if ((x+16) mod 32 != 0) {
+		if ((x+16) < 16) {
+			x += 1
+		} else {
+			x -= 1
+		} 
+	}
+}
